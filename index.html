@@ -30,12 +30,13 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
 }
-.btn, button {
+.btn {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: .2px;
     line-height: 18px;
     padding: 1em 3em;
+    background-color: hsl(123, 100%, 40%);
 }
 .d-lg-none {
     display: none!important;
@@ -43,7 +44,17 @@
 .navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     color: rgba(51,51,51,.9);
 }
-    </style>
+ul li{
+  display: inline-block;
+  margin-left: 30px;
+  
+}
+nav .nav-item.close {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    display: none;
+}
+</style>
 </head>
 
 <header>
@@ -76,16 +87,16 @@
 
 </header>
 <body>
-    <nav class="navbar navbar-light navbar-expand">
+    <nav style="background: #fff; "class="navbar navbar-light navbar-expand">
         <div class="container">
             <a href="/" class="navbar-brand nuxt-link-exact-active nuxt-link-active" target="_self" aria-current="page"><img src="https://dy9hpnbyn8tl0.cloudfront.net/kodego-large.svg" alt="KodeGo" class="logo">
             </a>
             <button class="btn d-block d-lg-none hamburger"><img src="https://dy9hpnbyn8tl0.cloudfront.net/hamburger.svg" class="img-fluid">
             </button>
                 <ul class="navbar-nav">
-                    <li class="nav-item close"><svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="x" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-x text-dark b-icon bi"><g><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path></g></svg>
+                    <li class="nav-item close"> <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="x" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-x text-dark b-icon bi"><g><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path></g></svg>
                     </li>
-                    <li class="nav-item"><a href="/#about-us" class="nav-link" target="_self">About Us</a>
+                    <li class="nav-item"><a href="/#about-us" class="nav-link nuxt-link-exact-active nuxt-link-active" target="_self" aria-current="page">About Us</a>
                     </li>
                     <li class="nav-item"><a href="/#how-it-works" class="nav-link" target="_self">How It Works</a>
                     </li>
